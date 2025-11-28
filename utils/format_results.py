@@ -3,12 +3,13 @@ import pandas as pd
 
 def format_results(dataset_name, results_dir, format_dir):
     """
-    Format raw benchmark results into summary tables.
+    Format raw benchmark results into summary tables: mean and std deviation per metric and method.
 
     :param dataset_name: str
     :param results_dir: str
     :param format_dir: str
     :return: None
+
     """
 
     os.makedirs(format_dir, exist_ok=True)

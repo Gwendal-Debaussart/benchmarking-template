@@ -13,6 +13,7 @@ The file contains functions to convert benchmark results into LaTeX tables. It r
 def alternative_method_name(method_name):
     """
     Generate an alternative name for a method by replacing underscores with spaces and capitalizing words.
+
     :param method_name: str
     :return: str
     """
@@ -28,6 +29,7 @@ def alternative_method_name(method_name):
 def alternative_dataset_name(dataset_name):
     """
     Generate an alternative name for a dataset by replacing underscores with spaces and capitalizing words.
+
     :param dataset_name: str
     :return: str
     """
@@ -43,6 +45,7 @@ def alternative_dataset_name(dataset_name):
 def format_result(mean, std, bold=False, second=False, percentage=True):
     """
     Format mean ± std with macros.
+
     :param mean: float
     :param std: float
     :param bold: bool, whether to bold the result
@@ -80,6 +83,7 @@ def benchark_to_tex(
 ):
     """
     Convert benchmark results to LaTeX tables.
+
     :param dataset_list: list of dataset names
     :param method_list: list of method names
     :param metric: str, the metric to be displayed in the table

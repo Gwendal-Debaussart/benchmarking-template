@@ -4,9 +4,7 @@ def dataset_list():
     """
     Returns a dictionary of available datasets and their loading functions.
 
-    Returns:
-    --------
-    datasets : dict
+    :return: dict,
         A dictionary where keys are dataset names and values are functions to load them.
     """
     return {
@@ -18,16 +16,12 @@ def load_dataset(name: str, **args):
     """
     Load a dataset by name.
 
-    Parameters:
-    -----------
-    name : str
+    :param name: str
         Name of the dataset to load.
-    **args : dict
+    :param args: dict
         Additional arguments to pass to the dataset loading function.
 
-    Returns:
-    --------
-    data : tuple
+    :return: tuple
         The loaded dataset, typically as (X, Y) or (list_views, true_labels).
     """
     datasets = dataset_list()
